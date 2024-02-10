@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #e6e9fb;
+  display: grid;
+  place-content: center;
+  padding: 10px;
+}
+
+.rating-card {
+  width: clamp(10rem, 35rem, 40rem);
+  min-height: 15rem;
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 10px 0px rgba(173, 175, 169, 0.5);
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #0f172a;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.rating-card h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.rating-card p {
+  text-align: center;
+  font-size: 0.8rem;
+  width: 80%;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+svg {
+  width: 70px;
+  height: 69px;
+}
+
+.svg-path {
+  fill: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  .rating-card {
+    width: 90%;
+  }
+  .stars svg {
+    width: 40px;
+    height: 39px;
+  }
+  .stars {
+    gap: 1rem;
+  }
+
+  .rating-card h3 {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rating-card {
+    width: 100%;
+  }
+}
