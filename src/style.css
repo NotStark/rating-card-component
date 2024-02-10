@@ -67,6 +67,7 @@ svg {
 @media screen and (max-width: 768px) {
   .rating-card {
     width: 90%;
+    gap: 1.5rem;
   }
   .stars svg {
     width: 45px;
